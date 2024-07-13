@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: gateway-server
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    registry-fetch-interval-seconds: 5
+    service-url:
+      default-zone: ${DISCOVERY_SERVER_URL}
