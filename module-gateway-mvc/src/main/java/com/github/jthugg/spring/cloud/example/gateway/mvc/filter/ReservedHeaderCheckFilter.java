@@ -1,6 +1,7 @@
 package com.github.jthugg.spring.cloud.example.gateway.mvc.filter;
 
 import com.github.jthugg.spring.cloud.example.core.XHttpHeaders;
+import org.springframework.core.Ordered;
 import org.springframework.http.HttpHeaders;
 import org.springframework.web.servlet.function.ServerRequest;
 
@@ -16,6 +17,11 @@ public class ReservedHeaderCheckFilter implements GlobalPreFilter {
             }
         }
         return request;
+    }
+
+    @Override
+    public int getOrder() {
+        return Ordered.HIGHEST_PRECEDENCE;
     }
 
 }
