@@ -17,4 +17,9 @@ public interface GlobalPostFilter
         return Integer.compare(getOrder(), filter.getOrder());
     }
 
+    @Override
+    default int getOrder() {
+        return 0;
+    }
+
 }
