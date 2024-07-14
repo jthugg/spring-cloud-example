@@ -11,7 +11,7 @@
 
 ### 게이트웨이
 
-- WebFlux 스타일 게이트웨이
+- [WebFlux 스타일 게이트웨이](./module-gateway-reactive)
 - MVC 스타일 게이트웨이 with Virtual Threads
 - WebFlux vs MVC
 - Discovery 서버 고도화 with Redis
